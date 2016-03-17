@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ankur Mangal</title>
+
+		<meta name="viewport" content ="width=device-width , initial-scale=1.0">
+		<meta name="keywords" content="ankur , mangal , web, design, university,  waterloo ,computer , engineering, engineer ,dav , kotkapura ,punjab , india ,brampton , canada" .>
+		<meta name= "description" content="Ankur Mangal .A 18 year old University of Waterloo Computer Engineering Undergrad living in Brampton,Canada .. ">
+		<meta name="copyright" content="Ankur Mangal">
+		
+		<link href='http://fonts.googleapis.com/css?family=Special+Elite|Coming+Soon' rel='stylesheet' type='text/css'>
+</head>
+
+
+<style>
+
+
+.knowmore h1{
+
+  text-decoration: underline;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  position :relative;
+  width: 800px;
+  margin: 0 auto;
+  top: 200px;
+  font-size:52px;line-height:52px;font-weight:700;margin-bottom:15px;
+color: black;
+}
+
+.knowmore h2 {
+
+display: none;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  position :relative;
+  width: 800px;
+  margin: 0 auto;
+  top : 220px;
+  font-size:32px;line-height:52px;font-weight:700;margin-bottom:15px;
+color: black;
+}
+
+.about.social-link{
+    position: relative;
+    min-height: 150px;
+    font-family: 'aperculight', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+}
+
+.social-link a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: #757575;
+    font-size: 16px;
+    letter-spacing: .05em;
+    position : relative;
+    top: 500px;
+    left :450px;
+}
+
+.social-link a:hover{
+    color: black;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.social-link a:nth-child(4):before, .social-link a:nth-child(3):before,.social-link a:nth-child(2):before{
+    content: '||';
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.myimage {
+     width: 405px;
+    height: 400px;
+    position: relative;
+    top: 1px;
+    left: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+}
+
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<body>
+<section class = "knowmore" id = "knowmore">
+  <h1>ANKUR<strong> MANGAL</strong>
+</h1>
+
+<h2 class="quotes"> is currently a uwaterloo undergrad...</h2>
+<h2 class="quotes"> is studying computer engineering...</h2>
+<h2 class="quotes"> is an aspiring developer...</h2>
+
+
+<div class="social-link"><a href="https://instagram.com/ankur.mangal.129/" target="_blank">Instagram</a>  <a href="https://www.facebook.com/ankur.mangal.129" target="_blank">Facebook</a>  <a href="https://twitter.com/AnkurMangal4" target="_blank">Twitter</a><a href="https://ca.linkedin.com/in/ankurmangal" target="_blank">Linkedin</a>
+</div>
+
+</section>
+
+<script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="wait.js"></script>
+<!--Javascript-->
+<script type="text/javascript">
+(function() {
+
+    var quotes = $(".quotes");
+    var quoteIndex = -1;
+    
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(2000)
+            .delay(2000)
+            .fadeOut(2000, showNextQuote);
+    }
+    
+    showNextQuote();
+    
+})();
+</script>
+</body>
+</html>
