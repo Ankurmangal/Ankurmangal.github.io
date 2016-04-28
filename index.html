@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,101 +8,110 @@
         <title>Ankur Mangal</title>
 
     <meta name="viewport" content ="width=device-width , initial-scale=1.0">
-    <meta name="keywords" content="ankur , mangal , web, design, university,  waterloo ,computer , engineering, engineer ,dav , kotkapura ,punjab , india ,brampton , canada" .>
-    <meta name= "description" content="Ankur Mangal .A 18 year old University of Waterloo Computer Engineering Undergrad living in Brampton,Canada .. ">
+    <meta name="keywords" content="ankur , mangal , university,  waterloo ,computer , engineering ,dav , kotkapura " .>
+    <meta name= "description" content="Ankur Mangal ">
     <meta name="copyright" content="Ankur Mangal">
     
     <link href='http://fonts.googleapis.com/css?family=Special+Elite|Coming+Soon' rel='stylesheet' type='text/css'>
-</head>
 
 
 <style>
-.knowmore h1{
+
+  .start h1{
+
   text-decoration: underline;
   font-family: 'Special Elite', cursive;
   text-align: center;
   position :relative;
-  width: 800px;
-  margin: 0 auto;
-  top: 200px;
-  font-size:52px;line-height:52px;font-weight:700;margin-bottom:15px;
-color: black;
-}
-.knowmore h2 {
-display: none;
+  top:170px;
+  font-size:44px;line-height:52px;font-weight:700;margin-bottom:15px;
+color: black;}
+
+.start h2 {display: none;
   font-family: 'Special Elite', cursive;
   text-align: center;
   position :relative;
-  width: 800px;
-  margin: 0 auto;
-  top : 220px;
-  font-size:32px;line-height:52px;font-weight:700;margin-bottom:15px;
+  top:175px;
+  font-size:30px;line-height:52px;font-weight:700;margin-bottom:15px;
 color: black;
 }
-.about.social-link{
+#hamburger{
+   display: none;
+
+    }
+
+.menu{
     position: relative;
-    min-height: 150px;
-    font-family: 'aperculight', sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    color: white;
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
 }
-.social-link a{
+.menu ul{
+  font-family: 'Special Elite', cursive;
+    width: auto;
+    text-align: center;
+}
+.menu ul li{
+  font-family: 'Special Elite', cursive;
     display: inline-block;
     text-decoration: none;
-    text-transform: lowercase;
-    color: #757575;
-    font-size: 16px;
-    letter-spacing: .05em;
     position : relative;
-    top: 450px;
-    left :450px;
+    top : 220px;
+    right :20px;
 }
-.social-link a:hover{
-    color: black;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+.menu ul li a.active{
+  font-family: 'Special Elite', cursive;
 }
-.social-link a:nth-child(4):before, .social-link a:nth-child(3):before,.social-link a:nth-child(2):before{
-    content: '||';
-    display: inline-block;
-    margin: 0 15px;
+.menu ul li a{
+  font-family: 'Special Elite', cursive;
+    height: 90px;
+    font-size: 20px;
+    color:  #262831;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 25px;
+    border: solid 5px #262831;
+    background-color:;
 }
-.myimage {
-     width: 405px;
-    height: 400px;
-    position: relative;
-    top: 1px;
-    left: 150px;
-    overflow: hidden;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    border-radius: 100%;
+
+.menu ul li a:hover{
+  font-family: 'Special Elite', cursive;
+    background-color: black;
+    color : white;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
 }
-</style>
+  </style>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<body
-{width:100%;}>
-<section class = "knowmore" id = "knowmore">
-  <h1>ANKUR<strong> MANGAL</strong>
-</h1>
 
-<h2 class="quotes"> is currently a uwaterloo undergrad...</h2>
-<h2 class="quotes"> is studying computer engineering...</h2>
-<h2 class="quotes"> is an aspiring developer...</h2>
+</head>
+  <body>
+    <section class ="start" id="start">
+      <h1>ANKUR<strong> MANGAL</strong></h1>
+      
 
+        <h2 class="quotes"> is currently a waterloo undergrad...</h2>
+        <h2 class="quotes"> loves to write while travelling...</h2>
+        <h2 class="quotes"> is a technology freak ...</h2>
+        <h2 class="quotes"> is a selfie addict as well...</h2>
 
-<div class="social-link"><a href="https://instagram.com/ankur.mangal.129/" target="_blank">Instagram</a>  <a href="https://www.facebook.com/ankur.mangal.129" target="_blank">Facebook</a>  <a href="https://github.com/Ankurmangal" target="_blank">Github</a><a href="https://ca.linkedin.com/in/ankurmangal" target="_blank">Linkedin</a>
-</div>
-
-</section>
+        <header class="navigation cf">
+          <div class="container">
+            <div id="hamburger">&#9776; MENU</div>
+            <nav class="menu" id="menu">
+              <ul>
+                <li><a href="vekho.html" data-text="#about" >Know More</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+    </section>    
 
 <script src="js/TweenLite.min.js"></script>
     <script src="js/EasePack.min.js"></script>
@@ -109,6 +120,7 @@ color: black;
 <!--Javascript-->
 <script type="text/javascript">
 (function() {
+
     var quotes = $(".quotes");
     var quoteIndex = -1;
     
@@ -124,5 +136,19 @@ color: black;
     
 })();
 </script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47549160-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 </body>
-</html>
